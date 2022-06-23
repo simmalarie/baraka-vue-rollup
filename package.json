@@ -1,14 +1,11 @@
 {
-  "name": "@simmalarie/baraka-vue-rollup",
+  "name": "@simonalarie/baraka-vue-rollup",
   "version": "0.1.1-0",
   "main": "dist/library.js",
   "module": "dist/library.mjs",
   "files": [
     "dist/*"
   ],
-  "repository": {
-    "url": "git://github.com/simmalarie/baraka-vue-rollup.git"
-  },
   "scripts": {
     "build": "rollup -c"
   },
