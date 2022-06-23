@@ -1,6 +1,6 @@
 {
   "name": "@simmalarie/baraka-vue-rollup",
-  "version": "0.1.0",
+  "version": "0.1.1-0",
   "main": "dist/library.js",
   "module": "dist/library.mjs",
   "files": [
@@ -19,7 +19,6 @@
     "vue": "^3.2.13",
     "test-tokens-npm": "^0.1.0-alpha.44",
     "ds-brk-test-distlit1": "^0.1.0-alpha.4"
-   
   },
   "devDependencies": {
     "rollup": "^2.75.7",
