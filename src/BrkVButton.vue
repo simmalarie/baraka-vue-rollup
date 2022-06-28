@@ -3,8 +3,40 @@
     
 </template>
 
-<script setup>
+<script>
+export default {
+  name: 'BrkVButton',
+  props: {
+    text: {
+        type: String,
+        default: 'bouton',
+    },
+    accessibilityText:{
+        type: String,
+        default: 'bouton',
+    },
+    variant:{
+        type: String,
+        default: 'primary'
+    },
+    link:{
+        type: String,
+        default: null
+    },
+    inverted: {
+        type: Boolean,
+        default: false
+    }
+  },
+   methods: {
+    doClick() {
+        console.log("clicked")   
+    }
+  }
+}
+</script>
 
+<!--script setup>
     const props = defineProps({
         text: {
             type: String,
@@ -27,11 +59,8 @@
             default: false
         }
     });
-
     //Fonctions
     function doClick() {
-        console.log("clicked")
-        
+        console.log("clicked")   
     }
-
-</script>
+</script-->

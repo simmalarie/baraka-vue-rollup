@@ -1,7 +1,9 @@
-import components from'./components'
+//import components from'./components'
+import BrkVButton from './BrkVButton.vue'
 
-const plugin = {
+const Plugin = {
   install (Vue) {
+    /*
     //globally register each component on the Vue instance
     for (const prop in components) {
       if (components.hasOwnProperty(prop)) {
@@ -9,8 +11,11 @@ const plugin = {
         
         Vue.component(component.name, component)
       }
-    }
+    } */
+
+    Vue.component("brk-vue-button", BrkVButton);
+
   }
 }
 
-export default plugin
+export default Plugin

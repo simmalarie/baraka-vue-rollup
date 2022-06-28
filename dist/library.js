@@ -3,79 +3,69 @@
 var vue = require('vue');
 
 var script = {
-  __name: 'BrkVButton',
+  name: 'BrkVButton',
   props: {
-        text: {
-            type: String,
-            default: 'bouton',
-        },
-        accessibilityText:{
-            type: String,
-            default: 'bouton',
-        },
-        variant:{
-            type: String,
-            default: 'primary'
-        },
-        link:{
-            type: String,
-            default: null
-        },
-        inverted: {
-            type: Boolean,
-            default: false
-        }
+    text: {
+        type: String,
+        default: 'bouton',
     },
-  setup(__props) {
-
-const props = __props;
-
-
-    
-
-    //Fonctions
-    function doClick() {
-        console.log("clicked");
-        
+    accessibilityText:{
+        type: String,
+        default: 'bouton',
+    },
+    variant:{
+        type: String,
+        default: 'primary'
+    },
+    link:{
+        type: String,
+        default: null
+    },
+    inverted: {
+        type: Boolean,
+        default: false
     }
-
-
-return (_ctx, _cache) => {
-  const _component_brk_button = vue.resolveComponent("brk-button");
-
-  return (vue.openBlock(), vue.createBlock(_component_brk_button, {
-    id: "brk-button",
-    text: props.text,
-    accessibilityText: props.accessibilityText,
-    variant: props.variant,
-    link: props.link,
-    onClick: doClick
-  }, null, 8 /* PROPS */, ["text", "accessibilityText", "variant", "link"]))
-}
-}
-
-};
-
-script.__file = "src/BrkVButton.vue";
-
-/*************************************************
- * Liste des composantes constituant la librairie
- * 
-**************************************************/
-
-var components = { BrkVButton: script };
-
-const plugin = {
-  install (Vue) {
-    //globally register each component on the Vue instance
-    for (const prop in components) {
-      if (components.hasOwnProperty(prop)) {
-        const component = components[prop];
-        
-        Vue.component(component.name, component);
-      }
+  },
+   methods: {
+    doClick() {
+        console.log("clicked");   
     }
   }
 };
 
-module.exports = plugin;
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_brk_button = vue.resolveComponent("brk-button");
+
+  return (vue.openBlock(), vue.createBlock(_component_brk_button, {
+    id: "brk-button",
+    text: _ctx.props.text,
+    accessibilityText: _ctx.props.accessibilityText,
+    variant: _ctx.props.variant,
+    link: _ctx.props.link,
+    onClick: $options.doClick
+  }, null, 8 /* PROPS */, ["text", "accessibilityText", "variant", "link", "onClick"]))
+}
+
+script.render = render;
+script.__file = "src/BrkVButton.vue";
+
+//import components from'./components'
+
+const Plugin = {
+  install (Vue) {
+    /*
+    //globally register each component on the Vue instance
+    for (const prop in components) {
+      if (components.hasOwnProperty(prop)) {
+        const component = components[prop]
+        
+        Vue.component(component.name, component)
+      }
+    } */
+
+    Vue.component("brk-vue-button", script);
+
+  }
+};
+
+module.exports = Plugin;
