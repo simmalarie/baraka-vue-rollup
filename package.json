@@ -1,6 +1,6 @@
 {
   "name": "@simonalarie/baraka-vue-rollup",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "main": "dist/library.js",
   "module": "dist/library.mjs",
   "files": [
