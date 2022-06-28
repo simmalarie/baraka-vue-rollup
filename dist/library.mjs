@@ -1,7 +1,7 @@
 import { resolveComponent, openBlock, createBlock } from 'vue';
 
 var script = {
-  name: 'BrkVButton',
+  name: 'VueButton',
   props: {
     text: {
         type: String,
@@ -45,7 +45,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 }
 
 script.render = render;
-script.__file = "src/BrkVButton.vue";
+script.__file = "src/VueButton.vue";
 
 //import components from'./components'
 
@@ -61,7 +61,7 @@ const Plugin = {
       }
     } */
 
-    Vue.component("brk-vue-button", script);
+    Vue.component("vue-button", script);
 
   }
 };

@@ -1,5 +1,5 @@
 //import components from'./components'
-import BrkVButton from './BrkVButton.vue'
+import VueButton from './VueButton.vue'
 
 const Plugin = {
   install (Vue) {
@@ -13,7 +13,7 @@ const Plugin = {
       }
     } */
 
-    Vue.component("brk-vue-button", BrkVButton);
+    Vue.component("vue-button", VueButton);
 
   }
 }
