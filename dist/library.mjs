@@ -37,10 +37,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (openBlock(), createBlock(_component_brk_button, {
     id: "brk-button",
-    text: _ctx.props.text,
-    accessibilityText: _ctx.props.accessibilityText,
-    variant: _ctx.props.variant,
-    link: _ctx.props.link,
+    text: $props.text,
+    accessibilityText: $props.accessibilityText,
+    variant: $props.variant,
+    link: $props.link,
     onClick: $options.doClick
   }, null, 8 /* PROPS */, ["text", "accessibilityText", "variant", "link", "onClick"]))
 }

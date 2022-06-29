@@ -1,5 +1,5 @@
 <template>
-    <brk-button id="brk-button" :text='props.text' :accessibilityText='props.accessibilityText' :variant='props.variant' :link='props.link' @click="doClick"></brk-button>
+    <brk-button id="brk-button" :text='text' :accessibilityText='accessibilityText' :variant='variant' :link='link' @click="doClick"></brk-button>
     
 </template>
 
