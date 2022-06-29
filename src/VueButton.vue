@@ -16,6 +16,7 @@ export default {
         type: String,
         default: 'bouton',
     },
+    
     variant:{
         type: String,
         default: 'primary'
