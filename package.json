@@ -1,6 +1,6 @@
 {
   "name": "@simonalarie/baraka-vue-rollup",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "main": "dist/library.js",
   "module": "dist/library.mjs",
   "files": [
@@ -17,7 +17,7 @@
     "test-tokens-npm": "^0.1.0-alpha.44",
     "ds-brk-test-distlit1": "^0.1.0-alpha.4"
   },
-  "dependencies":{
+  "dependencies": {
     "ds-brk-test-distlit1": "^0.1.0-alpha.4"
   },
   "devDependencies": {
