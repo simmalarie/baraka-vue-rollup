@@ -17,14 +17,10 @@
     "test-tokens-npm": "^0.1.0-alpha.44",
     "ds-brk-test-distlit1": "^0.1.0-alpha.4"
   },
-  "dependencies": {
-    "ds-brk-test-distlit1": "^0.1.0-alpha.4"
-  },
   "devDependencies": {
     "rollup": "^2.75.7",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-vue": "^6.0.0",
-    "copyfiles": "^2.4.1",
-    "replace-in-file": "^6.3.5"
+    "rollup-plugin-vue": "^6.0.0"
+
   }
 }

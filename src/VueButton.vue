@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import '../baraka/baraka.js'
+
 export default {
   name: 'VueButton',
   props: {
@@ -16,7 +16,7 @@ export default {
         type: String,
         default: 'bouton',
     },
-    
+
     variant:{
         type: String,
         default: 'primary'
